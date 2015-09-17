@@ -4,12 +4,8 @@ Official website: [meridianvk.com](http://meridianvk.com)
 
 ![Screenshot](http://meridianvk.com/Content/img/index/m5.png)
 
-##Source code
-Here is a source code of Meridian starting 4 version.
-Unfortunately most parts of code isn't documented yet.
-
-##Contributing
-Changes and improvements are very welcome. Feel free to fork and open a pull request.
+##This fork
+Contrary to my own vk.com search application, Meridian did not support downloading mp3 files. This is why I decided to create my own fork, which does allow you to download mp3's straight from vk.com.
 
 ##License
 [Apache License](LICENSE.txt)
