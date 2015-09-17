@@ -287,6 +287,7 @@
     <Compile Include="Services\UpdateService.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="ViewModel\Flyouts\DownloadAudioViewModel.cs" />
     <Compile Include="ViewModel\Local\LocalAlbumViewModel.cs" />
     <Compile Include="ViewModel\Local\LocalMusicViewModel.cs" />
     <Compile Include="ViewModel\Main\FeedViewModel.cs" />
@@ -323,6 +324,9 @@
     </Compile>
     <Compile Include="View\Compact\CompactLandscapeView.xaml.cs">
       <DependentUpon>CompactLandscapeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Flyouts\DownloadAudioView.xaml.cs">
+      <DependentUpon>DownloadAudioView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Flyouts\Local\MusicScanView.xaml.cs">
       <DependentUpon>MusicScanView.xaml</DependentUpon>
@@ -637,6 +641,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Flyouts\DownloadAudioView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Flyouts\Local\MusicScanView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -833,10 +841,13 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ErrorResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Localization\MainResources.ru.resx" />
+    <EmbeddedResource Include="Resources\Localization\MainResources.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Localization\MainResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MainResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -57,6 +57,8 @@
                 <ItemsControl>
                     <MenuItem Header="{x:Static localization:MainResources.ContextMenuAdd}" Visibility="{Binding IsAddedByCurrentUser, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=True}" Command="{Binding Main.AddRemoveAudioCommand, Source={StaticResource Locator}}" CommandParameter="{Binding}"
                               Click="MenuItem_OnClick"/>
+                    <MenuItem Header="{x:Static localization:MainResources.ContextMenuDownload}" Command="{Binding Main.DownloadCommand, Source={StaticResource Locator}}" CommandParameter="{Binding}"
+                              Click="MenuItem_OnClick"/>
                     <MenuItem Header="{x:Static localization:MainResources.ContextMenuEdit}" Visibility="{Binding IsAddedByCurrentUser, Converter={StaticResource BoolToVisibilityConverter}}" Command="{Binding Main.EditAudioCommand, Source={StaticResource Locator}}" CommandParameter="{Binding}"
                               Click="MenuItem_OnClick"/>
                     <MenuItem Header="{x:Static localization:MainResources.ContextMenuRemove}" Visibility="{Binding IsAddedByCurrentUser, Converter={StaticResource BoolToVisibilityConverter}}" Command="{Binding Main.AddRemoveAudioCommand, Source={StaticResource Locator}}" CommandParameter="{Binding}"

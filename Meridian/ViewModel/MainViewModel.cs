@@ -104,6 +104,8 @@ namespace Meridian.ViewModel
 
         public RelayCommand<VkAudio> AddRemoveAudioCommand { get; private set; }
 
+        public RelayCommand<VkAudio> DownloadCommand { get; private set; }
+
         public RelayCommand<VkAudio> EditAudioCommand { get; private set; }
 
         public RelayCommand<VkAudio> ShareAudioCommand { get; private set; }
@@ -618,6 +620,13 @@ namespace Meridian.ViewModel
             {
                 audio.IsAddedByCurrentUser = !audio.IsAddedByCurrentUser;
                 LikeDislikeAudio(audio);
+            });
+
+            DownloadCommand = new RelayCommand<VkAudio>(audio =>
+            {
+                var flyout = new FlyoutControl();
+                flyout.FlyoutContent = new DownloadAudioView(audio);
+                flyout.Show();
             });
 
             EditAudioCommand = new RelayCommand<VkAudio>(audio =>

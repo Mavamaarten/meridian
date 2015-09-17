@@ -147,6 +147,9 @@
   <data name="ContextMenuAdd" xml:space="preserve">
     <value>Add to my music</value>
   </data>
+  <data name="ContextMenuDownload" xml:space="preserve">
+    <value>Download mp3 file</value>
+  </data>
   <data name="ContextMenuAddToNowPlaying" xml:space="preserve">
     <value>Add to now playing</value>
   </data>
@@ -803,5 +806,14 @@
   </data>
   <data name="SettingsMenuGeneral" xml:space="preserve">
     <value>General</value>
+  </data>
+  <data name="DownloadAudioTitle" xml:space="preserve">
+    <value>Download Audio</value>
+  </data>
+  <data name="SaveAudio" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadingAudioTitle" xml:space="preserve">
+    <value>Hold on a sec... Downloading your track.</value>
   </data>
 </root>

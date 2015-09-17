@@ -798,4 +798,7 @@
   <data name="SettingsMenuGeneral" xml:space="preserve">
     <value>Общие</value>
   </data>
+  <data name="ContextMenuDownload" xml:space="preserve">
+    <value>Download mp3 file</value>
+  </data>
 </root>
